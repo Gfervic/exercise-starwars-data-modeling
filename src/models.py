@@ -33,7 +33,7 @@ class Planet(Base):
     #  Notice that each column is also a normal Python instance attribute.
     id = Column(Integer, primary_key=True)
     name = Column(String(80), unique=True, nullable=False)
-    weater = Column(String(150))
+    weather = Column(String(150))
 
 class FavChar(Base):
     __tablename__ = 'favchar'
